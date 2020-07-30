@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/layoutcity"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textView_username"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Your are in "/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/TV_cityName"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="City name"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:textSize="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/layoutcity"
+        android:text="main"
+        android:id="@+id/main"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/TV_temp"
+            android:layout_below="@+id/layoutcity"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="temp"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutmin"
+        android:layout_below="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="temp min :"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/temp_min"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"
+            android:text="temp max :"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/temp_max"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:id="@+id/cardview"
+        android:layout_below="@+id/layoutmin"
+        android:padding="2dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="windspeed"
+            android:id="@+id/wind"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/wind"
+                android:layout_height="wrap_content"
+                android:text="humidity"
+                android:id="@+id/humidity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/humidity"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:id="@+id/pressure"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text_date"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardview"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:text="Todays Date: "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/current_date"
+        android:layout_below="@+id/cardview"
+        android:layout_toRightOf="@+id/text_date"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:text=" Date: "/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/current_date"
+        android:src="@drawable/ic_thermo"/>
+
+
+</RelativeLayout>

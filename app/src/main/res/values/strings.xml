@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+
+    <array name="cities">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Noida</item>
+    </array>
+
+</resources>
